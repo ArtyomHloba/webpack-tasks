@@ -138,6 +138,43 @@
     * {
       box-sizing: border-box;
     }
+    body {
+      font-size: 20px;
+      font-family: sans-serif;
+    }
+    .info-container {
+      max-width: 400px;
+      min-width: 150px;
+      width: 100%;
+      box-shadow: 0 0 5px gray;
+      padding: 15px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin: 50px auto;
+    }
+    .title {
+      font-weight: 700;
+    }
+    .btn {
+      text-decoration: none;
+      padding: 5px 10px;
+      align-self: center;
+      background-color: lightskyblue;
+      color: black;
+      border-radius: 5px;
+      transition: 0.2s;
+    }
+    .btn:hover {
+      background-color: lightgray;
+    }
   </style>
-  <body></body>
+  <body>
+    <article class="info-container">
+      <h2 class="title">Про мене</h2>
+      <p>Хобі: подобається грати в комп'ютерні ігри</p>
+      <a class="btn" href="./index.html">На головну сторінку</a>
+    </article>
+  </body>
 </html>
