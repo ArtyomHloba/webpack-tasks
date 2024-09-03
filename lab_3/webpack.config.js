@@ -19,9 +19,19 @@ module.exports = {
       filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
-      title: 'About me',
-      template: path.resolve(__dirname, './src/pages/about.html'),
-      filename: 'about.html'
+      title: 'Photo',
+      template: path.resolve(__dirname, './src/pages/photo.html'),
+      filename: 'photo.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'rozklad',
+      template: path.resolve(__dirname, './src/pages/rozklad.html'),
+      filename: 'rozklad.html'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'News',
+      template: path.resolve(__dirname, './src/pages/news.html'),
+      filename: 'news.html'
     })
   ],
   devServer: {
