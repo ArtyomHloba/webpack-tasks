@@ -10,6 +10,7 @@ body {
   background: #22c1c3;
   background: linear-gradient(103deg, #22c1c3 0%, #fdbb2d 100%);
   padding: 10px;
+  background-size: 300% 400%;
 }
 
 h1,
