@@ -4,33 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="../index.js"></script>
   </head>
   <body>
-    <header>
+    <header class="header-page">
       <h1>Личная страница Глоба Артём Сергеевич</h1>
       <ul class="header-nav">
+        <li><a href="./index.html">Личная информация</a></li>
         <li><a href="./rozklad.html">Моё рассписание</a></li>
         <li><a href="./photo.html">Фотоальбомы</a></li>
         <li><a href="./news.html">Последние новости</a></li>
-        <li><a href="./index.html">Личная информация</a></li>
       </ul>
     </header>
     <main>
       <h2>Последние новости</h2>
-      <img class="photo" src="../assets/img/iron-globa.jpg" alt="" />
-      <p>Дата публикации</p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est fugit
-        tenetur vel. Velit excepturi laborum aperiam minus expedita cumque hic,
-        optio consequuntur aspernatur sed vitae, animi doloribus id et quis
-        omnis eaque assumenda dolores voluptatibus fugit! Expedita vel
-        blanditiis architecto voluptas, ipsa a, sit at quod unde illum deleniti!
-        Necessitatibus.
-      </p>
-      <a href="">Подробнее</a>
+
+      <section class="news-container">
+        <div class="card-container">
+          <img
+            class="photo"
+            src="https://ichef.bbci.co.uk/news/480/cpsprodpb/8c48/live/c35c2010-71a2-11ef-b02d-c5f3b724a1ea.jpg.webp"
+            alt=""
+          />
+          <p>13.09.2024</p>
+          <p>Russia can end war now, says PM as Putin warns West</p>
+          <a href="https://www.bbc.com/news/articles/cvgxgvw38xjo">Подробнее</a>
+        </div>
+
+        <div class="card-container">
+          <img
+            class="photo"
+            src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/049f/live/ac2939c0-7150-11ef-9e68-2f2462ff3aca.png.webp"
+            alt=""
+          />
+          <p>13.09.2024</p>
+          <p>Israeli special forces 'raid missile site in Syria'</p>
+          <a href="https://www.bbc.com/news/articles/c89w98xnjk2o">Подробнее</a>
+        </div>
+
+        <div class="card-container">
+          <img
+            class="photo"
+            src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/fb77/live/6e882790-7194-11ef-b5fc-5368f4e1ab0b.jpg.webp"
+            alt=""
+          />
+          <p>13.09.2024</p>
+          <p>N Korea releases rare photos of Kim at uranium facility</p>
+          <a href="https://www.bbc.com/news/articles/cly9ypzq8qeo">Подробнее</a>
+        </div>
+
+        <div class="card-container">
+          <img
+            class="photo"
+            src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/1b1f/live/dbc66da0-7133-11ef-b282-4535eb84fe4b.jpg.webp"
+            alt=""
+          />
+          <p>12.09.2024</p>
+          <p>Mystery tremors were from massive nine-day tsunami</p>
+          <a href="https://www.bbc.com/news/articles/cged3jd8llyo">Подробнее</a>
+        </div>
+      </section>
     </main>
-    <footer>
+    <footer class="footer-page">
       <p>Copirite 2015. Все права защищены. <a href="#">Напишите мне!</a></p>
     </footer>
   </body>

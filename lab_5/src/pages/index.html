@@ -4,20 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="../index.js"></script>
   </head>
   <body>
-    <header>
+    <header class="header-page">
       <h1>Личная страница Глоба Артём Сергеевич</h1>
       <ul class="header-nav">
+        <li><a href="./index.html">Личная информация</a></li>
         <li><a href="./rozklad.html">Моё рассписание</a></li>
         <li><a href="./photo.html">Фотоальбомы</a></li>
         <li><a href="./news.html">Последние новости</a></li>
-        <li><a href="./index.html">Личная информация</a></li>
       </ul>
     </header>
     <main>
-      <section>
+      <section class="my-beografia">
         <h2>Моя биография</h2>
         <img class="my-photo" src="../assets/img/me.jpg" alt="me" />
         <p>Подпись</p>
@@ -36,11 +42,15 @@
           deleniti ipsa aliquam quos facere.
         </p>
       </section>
-      <section>
+      <section class="my-hobby">
         <h2>Мои увлечения</h2>
+        <ul>
+          <li>Web-програмирование</li>
+          <li>Компьютерные игры</li>
+        </ul>
       </section>
     </main>
-    <footer>
+    <footer class="footer-page">
       <p>Copirite 2015. Все права защищены. <a href="#">Напишите мне!</a></p>
     </footer>
   </body>
