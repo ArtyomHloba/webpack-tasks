@@ -2,6 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -14,6 +15,7 @@ module.exports = {
     clean: true
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Index',
       template: path.resolve(__dirname, './src/pages/index.html'),
@@ -60,13 +62,6 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           filename: 'images/[hash][ext][query]'
-        }
-      },
-      {
-        test: /\.(woff(2)?|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'fonts/[hash][ext][query]'
         }
       }
     ]
